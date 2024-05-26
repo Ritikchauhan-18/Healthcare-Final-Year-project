@@ -4,53 +4,149 @@ html {
   width: 100%;
 }
 
-* {
+body{
+  height: 100vh;
   margin: 0;
-  padding: 0;
+  display: flex;
 }
 
-.blue-rectangle {
-  padding: 2px;
-  position: absolute;
-  width: 100%;
-  height: 500px;
-  background-color: #a3d1fc
+.blue-rectangle{
+  width: 250vh;
+  height: 50vh;
+  background-color: #a3d1fc;
 }
 
-.img {
-  top: 0px;
-  width: 20%;
-  height: 190px;
-  
-  position: absolute;
+.images {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  align-items: center;
 }
 
-.text {
-  width: 100%;
+#text {
   text-align: center;
+  margin-top: 25px;
+  font-family: "Charmonman", cursive;
+  font-size: x-large;
+}
+
+.main-rectangle{
+  display: flex;
+  flex-direction: row;  
+}
+
+.Left{
+  background-image: url('/static/img/leftt1.png') ;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
-  top: 20px; 
+  height: 80vh;
+  width: 50vh;
+  margin-left: 5%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
 }
 
+.navbar{
+  display: flex;
+  flex-direction: column;
 
-
-.main-rectangle {
-  border: 1px solid black;
-    margin-top: 80px;
-    position: relative;
-    border-radius: 20px;
-    width: 94%;
-    height: 700px;
-    background-color: #E4EEF8;
-    margin-left: 3%; /* Shift 10px from left */
-    
-    padding: 0px;
-    bottom: 0;
 }
 
+.Left .navbar {
+  align-items: center;
+  font-size: xx-large;
+}
+
+.Register{
+  
+  font: 1em sans-serif;
+  font-style: bold;
+  text-align: center;
+}
+
+.Register > p{
+  font-size: xx-large;
+  margin-bottom: 0;
+}
+.Right {  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-right: 5%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  background-image: url('/static/img/backimages.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.Right #r1 {
+  background-image: url('/static/img/health.jpeg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}
+
+#r1 > h1{
+  margin-left: 200px;
+  font-size: 90px;
+}
+
+#r1 > h2{
+  margin-left: 200px;
+  font-size: 50px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  font-size: xx-large;
+}
+
+#age {
+  font-size: xx-large;
+  border-radius: 20px;
+  
+}
+
+#w_class {
+  font-size: xx-large;
+}
+
+#edu{
+  font-size: xx-large;
+}
+
+#martial_stat{
+  font-size: xx-large;
+}
+
+#intext{
+  font-size: xx-large;
+}
+
+#submit{
+  font-size: xx-large;
+}
+
+.select{
+  width: 100%;
+  padding: 16px 20px;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
 
 .container {
-  padding: 0px;
   text-align: center;
-
 }

@@ -28,7 +28,7 @@
     </div>
     <div class="main-rectangle">
       <div class="Left">
-        <center><img style= margin-top:130px; width=400px src="/static/img/healyou.png"></center>
+        <center><img width=400px src="/static/img/healyou.png"></center>
         <br><br>
         
           <nav class="navbar">
@@ -38,7 +38,7 @@
           <br>
           <a href="/js/">Find a Doctor</a>
           <br>
-          <a href="templates/home/healthdiet.html/">Health Diets</a>
+          <a href="/python/">Health Diets</a>
           <br>
           <a href="/html/">Health Diets</a>
           <br>
@@ -52,45 +52,19 @@
           <p>Register</p>
       </div>
     </div>
-        <div class="Right">
+        <div class="Right"> 
           <div id="r1">
-          <h1>Welcome to HealYou</h1>
-          <h2>Prediction is all about to early cure<h2>
+            <h1>Welcome to HealYou</h1>
+            <h2>Prediction is all about to early cure<h2>
+            </div>
+          <div class='result'>
+            <h1>
+              Result
+            </h1>
           </div>
-          <div class='form' >
-            <form action="/result" method="POST">
-              {% csrf_token %}
-              <label for="age">Age :</label>
-              <input type="text" id="age" name="age">
-              <br><br>
-              <label for="martial_stat">Average Glucose Level</label>
-              <input type="text" id="intext" name="intext" value="">
-              <br><br>
-              <label for="w_class">Hypertension</label>
-              <select id="w_class" name="w_class">
-                <option value="0">YES</option>
-                <option value="1">NO</option>
-                <br><br>
-              </select>
-              <br><br>
-              <label for="edu">Heart Disease</label>
-              <select id="edu" name="edu">
-                <option value="0">YES</option>
-                <option value="1">NO</option>
-              </select>
-              <br><br>
-              <label for="martial_stat">Marital Status</label>
-              <select id="martial_stat" name="martial_stat">
-                <option value="0">not married</option>
-              <option value="1">married</option>
-              </select>
-              <br><br>
-            <input type="submit" id="submit" value="Submit">
-          </form>
-        </div>
-        <div class="container">
-          <p>&copy; HealYou.com. All rights reserved.</p>
-        </div>
+          <div class="container">
+            <p>&copy; HealYou.com. All rights reserved.</p>
+          </div>
       </div>
     </div>
     </div>
